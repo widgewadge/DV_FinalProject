@@ -31,13 +31,19 @@ source('../02 Data Wrangling/reformatting.R', echo = TRUE)
 
 In the following graphs, we show the number of mushrooms with a given attribute separated into two groups: poisonous mushrooms and edible mushrooms.
 
+*****
+
 # Rank
 The last column shows the rank of the cap colors in each group. Here, we found that the most popular color is brown, shared between both groups of edible and poisonous. 
 
 <img src="../00 Doc/rank.png" />
 
-<img src="../00 Doc/Cap Color.png" />
+****
 
+# Cap Color
+We can see here that all green and purple capped mushrooms are edible. 
+
+<img src="../00 Doc/Cap Color.png" />
 
 *****
 
@@ -48,9 +54,9 @@ Here, we are showing the different types of habitats that the mushrrooms grow in
 
 *****
 
+# Nth
 This crosstab shows the third most numerous cap color for the two groups
 
-# Nth
 <img src="../00 Doc/nth.png" />
 
 *****
@@ -63,7 +69,7 @@ This graph shows the odor that the different types of odor the mushrooms produce
 *****
 
 # Habitats and Cap Color
-Here we combined habitats and color. One interesting thing we found from this graph is that 100% of white mushrooms found in urban areas are poisonous. 
+Here we combined habitats and color. We can see that 100% of white mushrooms found in urban areas are poisonous. Similarly, if the cap color is red and the habitat is either leaves or paths, the mushroom is likely to be poisonous. Yellow capped mushrooms growing in meadows are edible, as are any mushroom growing in waste. 
 
 <img src="../00 Doc/All.png" />
 
