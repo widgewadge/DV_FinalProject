@@ -62,7 +62,7 @@ Here, we are showing the diffrent types of habitats that the mushrrooms grow in.
 *****
 
 # Nth
-<img src="../00 Doc/Nth.png" />
+<img src="../00 Doc/nth.png" />
 
 *****
 
