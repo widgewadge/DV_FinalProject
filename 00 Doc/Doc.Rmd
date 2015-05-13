@@ -54,6 +54,13 @@ Here, we are showing the different types of habitats that the mushrrooms grow in
 
 *****
 
+# Gill Color
+The gills on the mushrooms are the ribs underneth the cap. I color coded the colors to match. Here we see that all of the buff colored ribs are poisonous. 
+
+<img src="../00 Doc/Gill Color.png" />
+
+*****
+
 # Nth
 This crosstab shows the third most numerous cap color for the two groups
 
@@ -61,10 +68,24 @@ This crosstab shows the third most numerous cap color for the two groups
 
 *****
 
+# Population
+Population of the mushrooms consist if they grow in groups to growing alone. The graph are in order of these groups from growing abudent together to growing in solitary.
+
+<img src="../00 Doc/Population.png" />
+
+*****
+
 # Odors
 This graph shows the odor that the different types of odor the mushrooms produce. We found out that the nice smelling mushrooms are edible, while the bad smelling ones are poisonous.
 
 <img src="../00 Doc/Odors.png" />
+
+*****
+
+# Spore Print
+The spores of a mushrooms are the micro substance that a mushroom could release. Here we seee that both edible and poisonous has about equal amount. But in that graph it shows that green and purple spores represent poisonous. 
+
+<img src="../00 Doc/Spore Print.png" />
 
 *****
 
