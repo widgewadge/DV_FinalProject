@@ -61,6 +61,8 @@ Here, we are showing the diffrent types of habitats that the mushrrooms grow in.
 
 *****
 
+This crosstab shows the third most numerous cap color for the two groups
+
 # Nth
 <img src="../00 Doc/nth.png" />
 
