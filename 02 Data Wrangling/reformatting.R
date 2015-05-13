@@ -1,4 +1,4 @@
-setwd("~/Desktop")
+setwd("~/Documents/School/2015spring/DataVis/DV_FinalProject/01\ Data")
 
 # Replace "." (i.e., period) with "_" in the column names.
 names(df) <- gsub("\\.+", "_", names(df))

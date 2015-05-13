@@ -17,35 +17,22 @@ require("rjson")
 require("jsonlite")
 ```
 
-For this project we decided to use the mushroom data from the UCI Machine Learning Repository. This data includes descrptions of samples to 23 species of gilled mushrooms in ithe Agaricus and Lepitoa family. Each species is identifieed as a definitely edible, definitely poisonous, or of unkown edibility. There are 22 attributes for each mushroom. And the data are just letters corresponding to a chart that they provide. But in our data we renamed them our selves to make it easier to read. 
+For this project, we are using the mushroom data from the UCI Machine Learning Repository. These data include 8124 samples corresponding to 23 species of gilled mushrooms in the Agaricus and Lepitoa family. Each sample is identified as either definitely edible or poisonous. The latter category includes both definitely poisonous and unknown edibility. There are 22 additional attributes for each mushroom. In the raw data, the value for each attribute is a letter. This letter corresponds to a value given in a chart provided with the data. The data are broken up into 6 tables, grouped by the attribute types. 
 
-In the following graphs, we show the number of mushrooms with a given cap color separated into two groups: poisonous mushrooms and edible mushrooms.
-
-To produce our graphs we went through these steps. 
-
-1. First we did a full joined on all the data 
+To make the data easier to work with, we join the six tables into one dataframe in R. Before we import the data, we must add the column names to the raw data files and save as CSV. We then use a data wrangling workflow in R to import the six CSV files and join them into one dataframe.
 ```{r}
 source('../01 Data/data.R', echo = TRUE)
 ```
 
-2. Added the column names and mushroom ID through excel
-Exported as .csv
-
-3. Wrote our own code in R to format the data.
-
-4.Removed all spaces and replaced with underscore
-
-5. Changed all data inside each attribute to their corresponding name
-        ie. Cap Color N would equal Brown..
-
+We use a modified version of Dr. Cannata's data reformatting script to format the data. The script replaces all periods in the column names with underscores. We use gsub to replace the letters with their corresponding values. For example, a value of "k" in a color attribute should be changed to "black". The script will also export the dataframe as a CSV file. We then upload the reformatted data to Oracle.
 ```{r}
 source('../02 Data Wrangling/reformatting.R', echo = TRUE)
 ```
 
-
+In the following graphs, we show the number of mushrooms with a given attribute separated into two groups: poisonous mushrooms and edible mushrooms.
 
 # Rank
-The last column shows the rank of the cap colors in each group. Here we found out that the most popular color is brown shared between both groups of edible and poisonous. 
+The last column shows the rank of the cap colors in each group. Here, we found that the most popular color is brown, shared between both groups of edible and poisonous. 
 
 <img src="../00 Doc/rank.png" />
 
@@ -55,7 +42,7 @@ The last column shows the rank of the cap colors in each group. Here we found ou
 *****
 
 # Habitat
-Here, we are showing the diffrent types of habitats that the mushrrooms grow in. From this data we found out that most of the mushrooms you find on paths you walk on is poisonous. 
+Here, we are showing the different types of habitats that the mushrrooms grow in. From this data, we found out that most of the mushrooms you find on paths you walk on are poisonous. 
 
 <img src="../00 Doc/Habitat.png" />
 
@@ -69,14 +56,14 @@ This crosstab shows the third most numerous cap color for the two groups
 *****
 
 # Odors
-This graph shows the odor the diffrent types of odor the mushrooms produce. Here we found out that the nice smelling mushrooms are edible while the bad smelling ones is poisonous.
+This graph shows the odor that the different types of odor the mushrooms produce. We found out that the nice smelling mushrooms are edible, while the bad smelling ones are poisonous.
 
 <img src="../00 Doc/Odors.png" />
 
 *****
 
 # Habitats and Cap Color
-Here we combined habitats and color. One intresting thing we found from this graph is that 100% of white mushrooms found in urban areas are poisonous. 
+Here we combined habitats and color. One interesting thing we found from this graph is that 100% of white mushrooms found in urban areas are poisonous. 
 
 <img src="../00 Doc/All.png" />
 

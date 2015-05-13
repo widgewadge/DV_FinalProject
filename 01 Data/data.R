@@ -1,4 +1,4 @@
-setwd("~/Desktop")
+setwd("~/Documents/School/2015spring/DataVis/DV_FinalProject/01\ Data")
 
 file_path_caps <- "caps.csv"
 file_path_gills <- "gills.csv"
